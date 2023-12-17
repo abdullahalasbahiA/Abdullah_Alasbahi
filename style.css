@@ -51,6 +51,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
+    background-color: #000000;
     background: url(images/background.png) no-repeat;
     background-size: cover;
     background-position: center;
@@ -156,6 +157,12 @@ section{
     margin: 10px;
 }
 
+
+
+/* ================================================================= */
+/* ===========================  PROJECTS  ========================== */
+/* ================================================================= */
+
 .projects{
     background-color: black;
 }
@@ -165,22 +172,21 @@ section{
 }
 
 .project-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: white;
     border: 1px solid white;
-    min-height: 14em;
-    width: 23em;
+    min-height: 12em;
+    width: 20em;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 4px;
     margin: 20px;
     transition: 0.5s ease;
 }
 
 .project-card:hover{
-    transform: scale(1.1);
-}
-
-.project-card:hover .project-image{
-    opacity: 0.9;
+    transform: scale(1.03);
 }
 
 .project-image img{
